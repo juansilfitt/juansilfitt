@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JuanSilFitt - Entrenador Personal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #d0ff00;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #000;
+      animation: fadeInDown 1s ease;
+    }
+
+    header img {
+      height: 60px;
+      transition: transform 0.3s;
+    }
+
+    header img:hover {
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    section:nth-of-type(2) { animation-delay: 0.8s; }
+    section:nth-of-type(3) { animation-delay: 1.1s; }
+    section:nth-of-type(4) { animation-delay: 1.4s; }
+
+    h1, h2 {
+      color: #d0ff00;
+      transition: color 0.3s;
+    }
+
+    h1:hover, h2:hover {
+      color: #fff;
+    }
+
+    p {
+      color: #eee;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .btn-whatsapp {
+      background-color: #d0ff00;
+      color: #000;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #bfff00;
+      transform: scale(1.05);
+    }
+
+    .img-section img {
+      width: 80%;
+      max-width: 400px;
+      border: 3px solid #d0ff00;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .img-section img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #d0ff00;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo JuansilFitt">
+  </header>
+
+  <section>
+    <h1>Entrena con JuanSilFitt</h1>
+    <p>Lic. en Educación Física - Especialista en entrenamiento muscular, fuerza, alimentación y bienestar integral.</p>
+    <a href="https://wa.me/573178492335" class="btn-whatsapp">¡Escríbeme por WhatsApp!</a>
+  </section>
+
+  <section class="img-section">
+    <h2>Conóceme</h2>
+    <img src="perfil.png" alt="Juan Camilo - Entrenador Personal">
+  </section>
+
+  <section class="img-section">
+    <h2>¡ENTRENA AHORA!</h2>
+    <img src="entrena.png" alt="Entrena Ahora">
+  </section>
+
+  <section>
+    <h2>Modalidades de Clase</h2>
+    <p>HIIT Real, TRX, Suspensión, Funcional, Military Fitness, Body Martial.</p>
+  </section>
+
+  <footer style="text-align:center; padding: 20px; color: #555;">
+    © 2025 JuanSilFitt - Todos los derechos reservados
+  </footer>
+</body>
+</html>
